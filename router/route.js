@@ -45,8 +45,8 @@ router.post('/buyNow', async (req, res) => {
             line_items: items,
             currency: "pkr",
             mode: 'payment',
-            success_url: `http://${process.env.ipaddress}:6969/successcheckout`,
-            cancel_url: `http://${process.env.ipaddress}:6969/declinecheckout`,
+            success_url: `${process.env.ipaddress}/successcheckout`,
+            cancel_url: `${process.env.ipaddress}/declinecheckout`,
             billing_address_collection: "required",
         });
         console.log(session)
