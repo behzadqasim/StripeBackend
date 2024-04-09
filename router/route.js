@@ -24,7 +24,7 @@ router.get('/declinecheckout', async (req, res) => {
 
 router.post('/buyNow', async (req, res) => {
     console.log(req.body)
-    const secret = "sk_test_51P0PLZP9ZSkWjujC0G9bMwrwDmUlyTLHi2JaqD1qAEjADsgkTkg8DwmHYhfwdMfRQ9s8ot4pEFO78ZInIy6Al74g00djqVkZG5";
+    const secret = "sk_test_51P3dSwA4AswEsCKbATZyUeJMovoQ7r9ofQrOXyxl6kSTA6aB29SPF8VKCn9dk7SHH8ZV1KTJfnL7tgdPgkRKBYXM00uVwwZTBg";
     const data = await req.body;
     const items = data.items.map((value, index) => {
         return {
